@@ -130,15 +130,15 @@ Scanner sc = new Scanner(System.in); // After importing the Scanner class, we ne
 
 
 // You can use the same Scanner to take multiple inputs. For example, let's take the name and age as input and output them.
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class inputPrac {
-    public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-        String name = sc.nextLine();
-        int age = sc.nextInt();
-        System.out.println(name+": "+age);
+// class inputPrac {
+//     public static void main(String[] args) {
+// 		Scanner sc = new Scanner(System.in);
+//         String name = sc.nextLine();
+//         int age = sc.nextInt();
+//         System.out.println(name+": "+age);
 
-    }
-}
+//     }
+// }
 // Note, that when you run it in our Playground, you need to provide all the inputs in the popup, separated by new lines.

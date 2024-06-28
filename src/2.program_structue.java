@@ -1,5 +1,5 @@
 
-class Prac {  // The first line of the code defines a class called Program. In Java, every line of code that can actually run needs to be inside a class. You can call the class anything you want.
+class Prac {  // The first line of the code defines a class called "Prac". In Java, every line of code that can actually run needs to be inside a class. You can call the class anything you want.
 
     public static void main(String[] arg){ // In Java, each application has an entry point, or a starting point, which is a method called main. The main method contains the code that executes when we run our program.
 
