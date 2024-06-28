@@ -1,0 +1,144 @@
+// Statement
+
+
+// class Demo {  
+//     public static void main(String[] arg){ 
+//         System.out.println("Hello World!");  
+//         System.out.println("Here we go.");
+//     }
+// }
+// A line of code is called a statement. A statement performs a specific task. You can add as many statements (or lines of code) as you need. If any code consists of 2 statements, it will output two messages in different lines. When you give the computer many statements, the instructions will be executed line by line, from top to bottom. Java is a case-sensitive language.
+
+
+
+
+  
+// Program Structure
+
+// class Program {  // The first line of the code defines a class called Program. In Java, every line of code that can actually run needs to be inside a class. You can call the class anything you want.
+
+//     public static void main(String[] arg){ // In Java, each application has an entry point, or a starting point, which is a method called main. The main method contains the code that executes when we run our program.
+
+        
+
+//         System.out.println("Hello World!");  // the println method will be executed, when we run our program.
+//         System.out.println("Here we go.");
+//     }
+// }
+
+// 💡 You need to start your program by creating a class.
+// 💡 The class needs to include a main method, which is the starting point of the program.
+// 💡 The main method includes the statements that need to be executed when the program runs.
+// 💡 The class, as well as the main method opens and closes using opening and closing curly brackets.
+
+
+
+
+// Varriable
+
+// String name;
+// This creates a variable called name of type String. Now, our variable name can hold String values. In programming terms, the process of creating a variable is called declaration.
+
+
+// name = "James";
+// After declaring our variable, we can assign it a value using the assignment = operator: Now, name holds the value "James".
+
+// String city = "Dhaka";
+// We can combine the declaration and assignment into one statement, like this:
+
+// city = "Bogura";
+
+
+// A variable can change its value during the program multiple times.
+// - A variable has a name and a type of the value it holds.
+// - To declare a variable use the type followed by the name of the variable.
+// - You can assign a value to the declared variable using the = operator.
+// - A variable can change its value during the program, by being assigned to a new value.
+
+
+
+
+/* 
+//  Types
+
+int age = 23; // Integers
+char letter = 'B'; // The char type is used to hold a single character. It is created similar to Strings, however it uses single quotes for the value.
+boolean isOpen = true; // can hold only the values true or false.
+double avg = 10.44; // Decimals
+float mean = 10.23f //  another type for decimals called float. When using the float type, you need to use an f postfix after the value.
+
+// float vs double
+
+
+// By default, decimal values are of type double. float is using less storage in the memory, but is not as precise as the double type. This means that the calculations that use floats are faster than the ones that use double,however, the result is less accurate in terms of the decimal digits.
+// As a general rule: use float instead of double when memory usage is critical. If you need more precise computations, for example, when dealing with currency, use double.
+
+
+//  - int holds integers (whole numbers).
+//  - double holds decimal numbers.
+//  - float is similar to double, but has less precision and requires less memory.
+//  - You need to use an f postfix after the value to make it a float (for example: 3.14f)
+//  - char holds a single character.
+//  - boolean can have one of the following values: true or false.
+
+*/
+
+
+//  Doing Math
+
+// + is addition
+// - is subtraction
+// / is division
+// % finds the remainder of a division.
+// You can add Strings using the + operator, in a process called concatenation. You can also concatenate strings with other types, such as integers and doubles. 
+
+
+
+// Comments
+
+// Comments are explanatory statements that explain what the code is doing. They can contain notes, todos as well as code that is work-in-progress.
+
+// for single line comment // 
+// for multi-line comments  /* */ 
+
+
+
+/* 
+// Input
+
+// Some programs need user input. There are a number of ways to take input in Java.
+
+import java.util.Scanner; // To take input from the user, we first must import the corresponding class. This line should be written at the very top of your code, before the class declaration.
+
+Scanner sc = new Scanner(System.in); // After importing the Scanner class, we need to create a Scanner object.
+
+*/
+
+// Now we are ready to take input from the user and assign it to a variable. For example, to take a String input, we need to use the following:
+// import java.util.Scanner;
+
+// class ScannerDemo {
+//     public static void main(string[] arg){
+//         Scanner sc = new Scanner(System.in);
+//         String name = sc.nextLine();
+
+//         System.out.println("Name: "+ name);
+//     }
+// }
+
+// There are similar methods available to take other types as input: nextInt(), nextDouble(), nextFloat(), nextBoolean().
+
+
+// You can use the same Scanner to take multiple inputs. For example, let's take the name and age as input and output them.
+import java.util.Scanner;
+
+class inputPrac {
+    public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        int age = sc.nextInt();
+        System.out.println(name+": "+age);
+
+    }
+}
+// Note, that when you run it in our Playground, you need to provide all the inputs in the popup, separated by new lines.
